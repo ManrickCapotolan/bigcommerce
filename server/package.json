@@ -1,0 +1,26 @@
+{
+  "name": "bigcommerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Manrick Capotolan <manrickcapotolan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cross-env": "^7.0.3",
+    "graphql": "^15.5.1",
+    "graphql-request": "^3.5.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.83",
+    "aws-sdk": "^2.919.0",
+    "prettier": "^2.4.1",
+    "serverless": "^2.43.1",
+    "serverless-bundle": "^4.3.1",
+    "serverless-offline": "^7.0.0",
+    "serverless-offline-aws-ssm": "^1.0.0"
+  },
+  "scripts": {
+    "start": "cross-env serverless offline start --verbose"
+  }
+}

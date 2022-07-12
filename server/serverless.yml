@@ -1,0 +1,36 @@
+service: bigcommerce
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${opt:stage, 'dev'}
+  region: eu-central-1
+  timeout: 300
+  environment:
+    BIGCOMMERCE_URL: https://api.bigcommerce.com/stores/by5lcxlv6i/v3
+    BIGCOMMERCE_ACCESS_TOKEN: gb2p7yv6yjvs4il47fuxi5xh4wytebg
+
+plugins:
+  - serverless-offline-aws-ssm
+  - serverless-bundle
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    httpPort: 3001
+
+functions:
+  - getProducts:
+      handler: src/handlers.getProductsHandler
+      timeout: 30
+      events:
+        - http:
+            path: /products
+            method: get
+  - updateProduct:
+      handler: src/handlers.updateProductHandler
+      timeout: 30
+      events:
+        - http:
+            path: /products/{productId}
+            method: put

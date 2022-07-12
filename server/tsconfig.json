@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "preserveConstEnums": true,
+    "strictNullChecks": false,
+    "sourceMap": true,
+    "allowJs": true,
+    "target": "ESNext",
+    "outDir": ".build",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "lib": ["es6", "dom"],
+    "rootDir": "./",
+    "noImplicitReturns": false,
+  }
+}
