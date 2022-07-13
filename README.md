@@ -28,3 +28,6 @@ This project contains 2 subprojects: `client` & `server`.
 - Use Offline.yml (serverless-offline-aws-ssm) for different environments
 - Add structured logging
 - Handle 10-product limitation of bigCommerce in update product endpoint
+
+# Sample
+![Sample](bigcommerce.gif)
