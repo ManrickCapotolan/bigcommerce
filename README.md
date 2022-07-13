@@ -13,6 +13,7 @@ This project contains 2 subprojects: `client` & `server`.
 - Use a better css framework (e.g: scss)
 - Use form library (e.g: react-hook-form)
 - Optimization: only pass the updated product to the API
+- Create components for Button and Input fields
 
 # Server
 
