@@ -31,5 +31,5 @@ functions:
       timeout: 30
       events:
         - http:
-            path: /products/{productId}
+            path: /products
             method: put

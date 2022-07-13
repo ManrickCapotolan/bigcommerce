@@ -1,0 +1,24 @@
+.product-list {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.product-list__heading {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.product-list__button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.product-list__footnote {
+  text-align: center;
+  color: green;
+  font-size: .75em;
+  margin-bottom: 0;
+  font-weight: bold;
+}

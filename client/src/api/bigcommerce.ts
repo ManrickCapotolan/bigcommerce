@@ -8,12 +8,11 @@ export const getProducts = async () => {
 };
 
 interface UpdateProductData {
-  id: number;
-  data: Partial<Product>
+  data: Partial<Product>[]
 }
 
-export const updateProduct = async ({ id, data }: UpdateProductData) => {
-  const cats = await axios.put(`${SERVER_URL}/products/${id}`, data);
+export const updateProduct = async ({ data }: UpdateProductData) => {
+  const cats = await axios.put(`${SERVER_URL}/products/`, data);
   return cats.data;
 }
 
